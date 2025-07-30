@@ -281,6 +281,7 @@ impl TcpSocket {
         not(target_os = "solaris"),
         not(target_os = "illumos"),
         not(target_os = "cygwin"),
+        not(target_os = "nuttx"),
     ))]
     #[cfg_attr(
         docsrs,
@@ -289,6 +290,7 @@ impl TcpSocket {
             not(target_os = "solaris"),
             not(target_os = "illumos"),
             not(target_os = "cygwin"),
+            not(target_os = "nuttx"),
         )))
     )]
     pub fn set_reuseport(&self, reuseport: bool) -> io::Result<()> {
@@ -326,6 +328,7 @@ impl TcpSocket {
         not(target_os = "solaris"),
         not(target_os = "illumos"),
         not(target_os = "cygwin"),
+        not(target_os = "nuttx"),
     ))]
     #[cfg_attr(
         docsrs,
@@ -334,6 +337,7 @@ impl TcpSocket {
             not(target_os = "solaris"),
             not(target_os = "illumos"),
             not(target_os = "cygwin"),
+            not(target_os = "nuttx"),
         )))
     )]
     pub fn reuseport(&self) -> io::Result<bool> {
